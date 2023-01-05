@@ -2,6 +2,7 @@ package com.educandoweb.course_298.resources;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import com.educandoweb.course_298.services.ProductService;
 @RequestMapping(value = "/products")
 public class ProductResource {
 
+	@Autowired
 	private ProductService service;
 	
 	@GetMapping
